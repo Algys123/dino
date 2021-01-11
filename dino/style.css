@@ -1,0 +1,56 @@
+.game{
+    width: 1000px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+}
+#dino{
+    width: 84px;
+    height: 125px;
+    background-image: url(img/dino.png);
+    background-image: 84px 125px;
+    position: relative;
+    top: 375px;
+}
+.jump{
+    animation: jump 0.4s linear;
+}
+
+@keyframes jump{
+    0% {
+        top: 375x;
+    }
+    30% {
+        top: 250px;
+    }
+    50% {
+        top: 125px;
+    }
+    80% {
+        top: 250px;
+    }
+    100% {
+        top: 375px;
+    }
+}
+
+#cake {
+    width: 71px;
+    height: 86px;
+    position: relative;
+    top: 289px;
+    left: 929px;
+
+    background-image: url("img/cake.png");
+    background-size: 71px 86px;
+
+    animation: block 1s infinite linear;
+}
+@keyframes block {
+    0%{
+        left: 929px;
+    }
+    100%{
+        left: -5px;
+    }
+}
